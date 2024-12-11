@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+* {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: black;
+    line-height: 1.8;
+}
+
+.box{
+	opacity: 0;
+}
+
+.fadeUp {
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+div {
+    max-width: 1200px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.class-li {
+    width: 48%;
+    height: 550px;
+}
+
+.class-li span {
+    display: block;
+    color: red;
+    font-size: x-small;
+}
+
+.button a {
+    text-align: center;
+    font-weight: bold;
+    background: red url(../images/arrow.png) no-repeat right 10px center;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+/* .button a::after {
+    content: url(../images/arrow.png);
+    margin-left: 200px;
+} */
+
+.button a:hover {
+cursor: pointer;
+box-shadow: 0 0 10px 0 #90bde2;
+}
